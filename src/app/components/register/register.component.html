@@ -1,0 +1,46 @@
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" name="nombre" [(ngModel)]="nombre" placeholder="Ingrese su nombre">
+    <hr>
+  </div>
+
+<div class="fecha">
+  <label for="exampleFormControlInput1" class="form-label">Fecha de aparición:</label>
+  <div class="datePicker">
+    <input type="date" id="datePicker" name="aparicion" [(ngModel)]="aparicion">
+  </div>
+</div>
+
+<div class="mb-3">
+  <hr>
+  <label for="exampleFormControlInput1" class="form-label">Biografia</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" name="bio" [(ngModel)]="bio" placeholder="Ingrese su biografia">
+  <hr>
+</div>
+
+
+<div class="casacomics">
+  <label for="exampleFormControlInput1" class="form-label">Casa de comics</label>
+  <select class="form-select" aria-label="Default select example" name="casa" [(ngModel)]="casa">
+    <option selected>Seleccione casa de comics</option>
+    <option value="Marvel">Marvel</option>
+    <option value="DC">DC</option>
+  </select>
+</div>
+
+<div class="imagen">
+  <form>
+    <hr>
+    <label for="imageUpload">Selecciona una imagen:</label>
+    <div>
+      <input type="file" id="imageUpload" name="imageUpload" name="img" (change)="onFileSelected($event)">
+    </div>
+  </form>  
+</div>
+ <hr>
+
+<button type="button" class="btn btn-outline-primary" (click)="registrarHeroe()" [routerLink]="['/heroes']">Guardar</button>
+
+
+
+  

@@ -1,0 +1,17 @@
+<h1>Iniciar Sesion</h1>
+<hr>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1"  name="email" [(ngModel)]="email" placeholder="name@example.com">
+  </div>
+
+  <hr>
+  <label for="inputPassword5" class="form-label">Contraseña</label>
+<input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock" name="password" [(ngModel)]="password">
+<hr>
+<button type="button" class="btn btn-secondary" (click)="onSubmit()">Ingresar</button>
+<button type="button" class="btn btn-secondary" (click)="onClick()">Ingresar con Google</button>
+
+
+
+

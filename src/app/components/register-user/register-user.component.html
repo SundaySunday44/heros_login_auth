@@ -1,0 +1,16 @@
+<h1>Registrar Usuario</h1>
+<hr>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1"  name="email" [(ngModel)]="email" placeholder="name@example.com">
+  </div>
+
+  <hr>
+  <label for="inputPassword5" class="form-label">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock" name="password" [(ngModel)]="password">
+<div id="passwordHelpBlock" class="form-text">
+    Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener espacios, caracteres especiales ni emoji.</div>
+
+<hr>
+<button type="button" class="btn btn-secondary" (click)="onSubmit()">Registrar</button>
+
